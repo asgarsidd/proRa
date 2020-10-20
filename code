@@ -1,0 +1,15 @@
+import time
+import unittest
+from threading import Thread
+
+import numpy
+
+from StreamViewer import StreamViewer
+from Streamer import Streamer
+
+
+class TestLocalStreaming(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        super(TestLocalStreaming, cls).setUpClass()
